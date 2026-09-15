@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #030C16;
 }
 
-/* Background Image */
+/* Background Image - Otimizada para Máxima Performance */
 .hero-bg-media {
   position: absolute;
   top: 0;
@@ -547,19 +547,6 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center right;
   z-index: 1;
-  animation: heroBgZoom 20s ease-out infinite alternate;
-  will-change: transform;
-}
-
-@keyframes heroBgZoom {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.03); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-bg-media {
-    animation: none;
-  }
 }
 
 /* Overlays Exatos */
